@@ -1,0 +1,58 @@
+<div class="bg-dark">
+    <div class="container">
+        <div class="row p-5">
+            <div class="col-12 col-md-4">
+                <div class="p-4 border border-2"style="border-radius: 15px;">
+                    <h3 class="text-light text-center">How to Calculate BMI</h3>
+                  <p class="text-light">For adults over the age of 20 years, BMI values are grouped into the following weight status categories:</p>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">BMI</th>
+                        <th scope="col">Weight Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Below 18.5</th>
+                        <td>Underweight</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">18.5-24.9</th>
+                        <td>Normal Weight</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25-29.9</th>
+                        <td>OverWeight</td>
+                      </tr><tr>
+                        <th scope="row">30-35</th>
+                        <td>Obese</td>
+                      </tr><tr>
+                        <th scope="row">Over 35</th>
+                        <td>Morbid Obesity</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="text-light">The range remains the same for males and females. There is no separate BMI calculator for men and women.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="p-4 border border-2"style="border-radius: 15px;">
+                    <h3 class="text-light text-center">BMI for Children</h3>
+                    <p class="text-light mb-3">In children, body fat content changes with age. It is also normal for teenage girls to have more body fat than boys. BMI calculation for children follows the sameformula as adults. But the value is then plotted on standard gender-specific BMI-for-age percentile charts for children. It determines the child's weight status compared to children of the same gender and age</p>
+                    <p class="p-4 bg-light text-dark">For example, a 25th percentile BMI for a 6-year old female child would indicate that the child's weight is higher than 25% of girls aged 6.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="p-4 border border-2"style="border-radius: 15px;">
+                    <h3 class="text-light text-center">BMI Calculator</h3>
+                        <input type="number" [(ngModel)]="Height" name="height" class="form-control mb-3" placeholder="Enter your Height">
+                        <input type="number" [(ngModel)]="weight" name="weight" class="form-control mb-3" placeholder="Enter your Weight">
+                        <button class="btn btn-light" (click)="BMI()">Submit</button>
+                        <p class="text-light mt-4">Your BMI Value = {{result}}</p>
+                        <p class="text-light"> Your Weight Status = {{status}}</p>
+                </div>
+            </div>
+        </div>
+</div>
+</div>

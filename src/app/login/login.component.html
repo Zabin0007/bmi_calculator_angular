@@ -1,0 +1,17 @@
+<div class="bg-dark">
+<div class="container">
+    <div class="row">
+            <div class="col-12 col-md-4"></div>
+            <div class="col-12 col-md-4 p-5 my-5" style="border: 5px solid whitesmoke;border-radius: 15px;">
+            <h2 class="text-center text-light mb-3">
+                Welcome Back
+            </h2>
+            <input type="text" [(ngModel)]="email" name="email" class="form-control mb-3" placeholder="email">
+            <input type="password" [(ngModel)]="password" name="password" class="form-control mb-3" placeholder="password">
+            <div class="text-center">  <button (click)="login()" class="btn btn-light">Login</button></div>
+            <p class="text-light mt-3 ms-5"> New To Here <a style="text-decoration: none;" href="register"> <span class="mx-4">Go to Register page</span></a></p>
+            </div>
+            <div class="col-12 col-md-4"></div>
+    </div>
+</div>
+</div>

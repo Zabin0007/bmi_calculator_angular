@@ -1,0 +1,10 @@
+<nav  class="navbar bg-dark" style="border-bottom: 1px solid whitesmoke;">
+  <div class="container p-0">
+    <a class="navbar-brand text-light" href="">
+      BMI Calculator
+    </a>
+    <div *ngIf="isLoggedIn">
+        <button (click)="signout()" class="btn btn-danger">Signout</button>
+    </div>
+  </div>
+</nav>

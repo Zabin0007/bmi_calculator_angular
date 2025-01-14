@@ -1,0 +1,18 @@
+<div class="bg-dark">
+    <div class="container">
+        <div class="row">
+                <div class="col-12 col-md-4"></div>
+                <div class="col-12 col-md-4 p-5 my-5" style="border: 5px solid whitesmoke;border-radius: 15px;">
+                <h2 class="text-center text-light mb-3">
+                    Welcome To BMI Calculator
+                </h2>
+                <input type="text" [(ngModel)]="username" name="username" class="form-control mb-3" placeholder="username">
+                <input type="text" [(ngModel)]="email" name="email" class="form-control mb-3" placeholder="email">
+                <input type="password" [(ngModel)]="password" name="password" class="form-control mb-3" placeholder="password">
+                <div class="text-center"><button (click)="register()" class="btn btn-light">Register</button></div>
+                <p class="text-light mt-3 ms-5"> Already registerd <a style="text-decoration: none;" href="login"> <span class="ms-5">Go to login page</span></a></p>
+                </div>
+                <div class="col-12 col-md-4"></div>
+        </div>
+    </div>
+    </div>
